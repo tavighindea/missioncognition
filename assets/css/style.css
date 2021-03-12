@@ -1,0 +1,67 @@
+@font-face {
+  font-family: missionFont;
+  src: url(/assets/AkayaTelivigala-Regular.ttf);
+}
+h1 {
+  font-size: 70px;
+  font-family: missionFont, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background: #1473e6;
+}
+
+#canvas {
+  position: absolute;
+  z-index: -1;
+  display: block;
+}
+
+body::after {
+    z-index: 10;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    background-image: radial-gradient(rgba(177, 133, 187, 0) 10%, rgba(131, 113, 182, 0.7) 100%);
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto !important;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.logo-container,
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.logo {
+  z-index: 100;
+  width: 400px;
+  margin-top: 90px;
+}
+
+.title {
+  text-align: center;
+  padding-top: 100px;
+}
