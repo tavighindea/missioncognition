@@ -2,8 +2,8 @@ window.onload = function() {
 
 	// Adjustable variables
 	var settings = {
-		pointDensity: 8,
-		connections: 7,
+		pointDensity: 30,
+		connections: 2,
 		sizeVariation: 0.3,
 		velocity: 0.00003,
 		maxMovement: 50,
